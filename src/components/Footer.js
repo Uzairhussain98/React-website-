@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './Footer.css'
-import logo from './logo.png'
+import logo from './logo.svg'
 import { SocialIcon } from 'react-social-icons';
 
 

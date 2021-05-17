@@ -1,9 +1,10 @@
 import './App.css';
 import Banner from './components/Banner';
 import Container from './components/Container';
+import Foot from './components/Foot';
 import Header from './components/Header';
 import Part from './components/Part';
-import Footer from './Footer';
+// import Footer from '/components/Footer.';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Banner/>
       <Container/> 
       <Part/>
-      <Footer/>
+      <Foot/>
       
      
 

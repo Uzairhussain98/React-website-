@@ -1,0 +1,18 @@
+.footer {
+  height: 61vh;
+  width: 100%;
+  background: linear-gradient(60deg, rgb(45, 198, 245), rgb(111, 111, 112));
+  text-align: center;
+}
+.footer__logo {
+  height: 110px;
+  width: 110px;
+  margin-top: 50px;
+}
+.footer > h3 {
+  padding-left: 180px;
+  padding-right: 100px;
+  margin-top: 50px;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
