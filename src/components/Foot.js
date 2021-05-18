@@ -9,7 +9,19 @@ import useWebAnimations,  { heartBeat }  from "@wellyshen/use-web-animations";
 
 const Foot= () => {
 
-    const { ref } = useWebAnimations({ ...heartBeat });
+
+  const { keyframes, animationOptions } = heartBeat;
+const { ref } = useWebAnimations({
+  keyframes,
+  animationOptions: {
+    ...animationOptions,
+    delay: 2000, // Delay 1s
+    // duration: animationOptions.duration * 0.75, // Speed up the animation
+    iterations:Infinity
+  },
+});
+
+    // const { ref } = useWebAnimations({ ...heartBeat });
 
     // const { ref,} = useWebAnimations({
     //     keyframes: [
@@ -35,7 +47,7 @@ const Foot= () => {
 
   return (
     <div className="footer">
-        <img className="footer__logo" src={logo} alt="" loading="lazy" ref={ref} />
+        <img ref={ref} className="footer__logo" src={logo} alt="" loading="lazy"  />
         <h3>Embark on an exciting career with us to learn and grow alongside the best in the industry</h3>
         <hr/>
         
